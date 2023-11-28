@@ -1,0 +1,26 @@
+create database prova_marco;
+
+ use prova_marco;
+ 
+ create TABLE pessoa(
+id int(11) primary KEY NOT NULL auto_increment,              
+    nome VARCHAR(4000) NOT NULL
+    );
+    
+    SET SQL_MODE="";
+    
+    SELECT COUNT(*) FROM pessoa;
+    
+    SET SQL_MODE ='STRICT_ALL_TABLES';
+    
+    SELECT  COUNT(*) from pessoa where nome ="CADASTRADA";
+    
+    UPDATE pessoa SET nome = 'Marco Antonio Franco' WHERE id = 13;
+
+UPDATE pessoa SET nome = 'Marco Antonio Franco' WHERE id = 130;
+
+UPDATE pessoa SET nome = 'Marco Antonio Franco' WHERE id = 1300;
+
+    SELECT id, nome  FROM pessoa  WHERE id = 13;
+
+SELECT id, nome  FROM pessoa  WHERE id = 13;
